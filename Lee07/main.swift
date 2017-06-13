@@ -10,3 +10,12 @@ import Foundation
 
 print("Hello, World!")
 
+var str = "helloworld"
+
+if let range = str.range(of: "^h.*d$", options: .regularExpresion ){
+
+let result = str.substring(with: range)
+    print("ok\(result)")
+}else{
+    print("XX")
+}
